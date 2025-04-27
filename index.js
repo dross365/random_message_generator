@@ -26,10 +26,15 @@ let workoutJudgement = ['Stop right now',
                         'quit working out all together'
 ];
 
+
 let timeOfDay = workoutTime[Math.floor(Math.random() * workoutTime.length)];
 let quote = inspireMessages[Math.floor(Math.random() * inspireMessages.length)];
 let judgement = workoutJudgement[Math.floor(Math.random() * workoutJudgement.length)];
 
-console.log(`The best time to work out is during the ${timeOfDay}!`);
-console.log(quote);
-console.log(`You should: "${judgement}."`);
+const readMessages = (message1, message2, message3) => {
+  return `The best time to work out is during the ${message1}!
+  "${message2}"
+  You should: "${message3}."`;
+}
+
+console.log(readMessages(timeOfDay, quote, judgement));
