@@ -11,7 +11,9 @@ let messages = ["Come on, you got this!",
                 "You have to work for the life you want!",
                 "You make your goals!",
                 "5 more days after this!",
-                "If you want that body, keep going!"
+                "If you want that body, keep going!",
+                "Extra motivation is always needed!",
+                "Stop whining and keep grinding!"
 ];
 
 let randomMessage = messages[Math.floor(Math.random() * messages.length)];
