@@ -9,7 +9,9 @@ let messages = ["Come on, you got this!",
                 "Don't give up on me now, you're so close!",
                 "Mama didn't raise no bi**h, keep going!",
                 "You have to work for the life you want!",
-                "You make your goals!"
+                "You make your goals!",
+                "5 more days after this!",
+                "If you want that body, keep going!"
 ];
 
 let randomMessage = messages[Math.floor(Math.random() * messages.length)];
