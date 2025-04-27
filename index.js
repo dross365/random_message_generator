@@ -1,4 +1,6 @@
-let messages = ["Come on, you got this!",
+let workoutTime = ['morning', 'afternoon', 'evening'];
+
+let inspireMessages = ["Come on, you got this!",
                 "Only 5 more minutes!",
                 "You're over half way, keep going!",
                 "You're not going to give up now, are you?",
@@ -16,5 +18,18 @@ let messages = ["Come on, you got this!",
                 "Stop whining and keep grinding!"
 ];
 
-let randomMessage = messages[Math.floor(Math.random() * messages.length)];
-console.log(randomMessage);
+let workoutJudgement = ['Stop right now',
+                        'Keep going for 5 more minutes',
+                        'keep going, you just started',
+                        'stop in 10 minutes',
+                        'switch to a different workout now',
+                        'quit working out all together'
+];
+
+let timeOfDay = workoutTime[Math.floor(Math.random() * workoutTime.length)];
+let quote = inspireMessages[Math.floor(Math.random() * inspireMessages.length)];
+let judgement = workoutJudgement[Math.floor(Math.random() * workoutJudgement.length)];
+
+console.log(`The best time to work out is during the ${timeOfDay}!`);
+console.log(quote);
+console.log(`You should: "${judgement}."`);
