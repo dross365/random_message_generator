@@ -33,8 +33,8 @@ let judgement = workoutJudgement[Math.floor(Math.random() * workoutJudgement.len
 
 const readMessages = (message1, message2, message3) => {
   return `The best time to work out is during the ${message1}!
-  "${message2}"
-  You should: "${message3}."`;
+"${message2}"
+You should: "${message3}."`;
 }
 
 console.log(readMessages(timeOfDay, quote, judgement));
